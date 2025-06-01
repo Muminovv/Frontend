@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import '../styles/editMovie.css';
 
-const API_URL = 'https://movies-w4fv.onrender.com';
+const API_URL = 'https://backend-meyh.onrender.com';
 
 export default function EditMovie() {
   const { id } = useParams();
