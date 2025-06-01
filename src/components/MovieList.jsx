@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/movieList.css";
 
-const API_URL = 'cfygvijokl;bhj';
+const API_URL = 'https://backend-meyh.onrender.com';
 
 export default function MovieList() {
   const [movies, setMovies] = useState([]);

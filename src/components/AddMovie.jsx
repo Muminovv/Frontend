@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
-const API_URL = 'sfrghfjgkhgjf';
+const API_URL = 'https://backend-meyh.onrender.com';
 
 export default function AddMovie() {
   const [title, setTitle] = useState('');
