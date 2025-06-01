@@ -1,0 +1,91 @@
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #22254b;
+  color: #e0e6f3;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 15px rgba(0, 150, 255, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #54e6ff;
+  text-shadow: 0 0 5px #54e6ff;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.spinner {
+  border: 6px solid #ccc;
+  border-top: 6px solid #54e6ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.movie-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2a2e62;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.movie-item:hover {
+  background: #3b4190;
+}
+
+.movie-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.button {
+  border: none;
+  padding: 8px 14px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+.button.edit {
+  background-color: #3cb371; /* mediumseagreen */
+}
+
+.button.edit:hover {
+  background-color: #2a7a4a;
+}
+
+.button.delete {
+  background-color: #e74c3c; /* alizarin */
+}
+
+.button.delete:hover {
+  background-color: #a83227;
+}
